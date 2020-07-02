@@ -20,6 +20,7 @@ function crawlNextPage() {
 
   // init window onload function
   response.onload = function crawlNextPage() {
+    // wait until content is fetched on a newly created window
     setTimeout(function () {
       if ($(response.document).find('li[class="next"] a')[0]) {  
         // print debug info
